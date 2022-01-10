@@ -1,1 +1,13 @@
 # db-first
+
+  ID    |  Marca  | Modello | Targa | Colore | Km auto | Ultima revisione | Anno Costr | Prezzo | Valut. |   Nome propr.   |    CF propr.   |In vendita dal| Descrizione
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1     |  Opel   | Corsa   |AS123AS|  Nera  | 95000   |    10/05/2019    |    2015    | 500000 | 350000 | Pinco Pallino   |SJTWZZ83A66L238F|  03/01/2022  | buono stato etc..
+  2     |  Fiat   | Panda   |BD345BD|  Rossa | 120000  |    23/05/2019    |    2013    | 400000 | 250000 | Giovanni Rossi  |ZPZLSF31C05A953S|  21/10/2021  | serve cambio gomme..
+  3     |  Ford   | Focus   |CE456CE|  Blue  | 78000   |    14/05/2019    |    2011    | 470000 | 320000 | Marco Verdi     |PDTLQL85B26A944T|  14/12/2021  | condizioni normali..
+  4     | Renault | Clio    |DF678DF|  Nera  | 92000   |    03/01/2020    |    2016    | 550000 | 400000 | Roberto Bianchi |HSHGMH96T21A172I|  13/09/2021  | ottime condizioni..
+______________________________________________________________________________________________________________________________________________________________________________
+  Primar| VARCHAR | VARCHAR |VARCHAR|VARCHAR | INT     |     VARCHAR      | INT        | INT    | INT    |     VARCHAR     |     VARCHAR    |    DATE      | TEXT
+  Key   |  (15)   |  (15)   | (15)  |  (15)  |         |       (20)       |            |        |        |       (50)      |      (20)      |              |
+AutoIncr| notNull | notNull |notNull| notNull| notNull |     null         |  notNull   |notNull |notNull |     notNull     |     notNull    |    notNull   | null
+  UNIQUE|         |         |UNIQUE |        |         |                  |            |        |        |                 |     UNIQUE     | DEFAULT(now) |
